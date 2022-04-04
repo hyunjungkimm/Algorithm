@@ -3,8 +3,8 @@
 
 |단원 명|링크|문제 수|연습 문제 수|
 |---|---:|:---:|:---:|
-|완전 탐색|[링크](https://github.com/rhs0266/FastCampus/tree/main/%EA%B0%95%EC%9D%98%20%EC%9E%90%EB%A3%8C/02-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/01~02-%EC%99%84%EC%A0%84%20%ED%83%90%EC%83%89)|6|3|
-|정렬|[링크](https://github.com/rhs0266/FastCampus/tree/main/%EA%B0%95%EC%9D%98%20%EC%9E%90%EB%A3%8C/02-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/03~04-%EC%A0%95%EB%A0%AC)|4|2|
+|완전 탐색|[링크](https://github.com/hyunjungkimm/Algorithm/tree/master/src/binaraysearch)|6|3|
+|정렬|[링크](https://github.com/hyunjungkimm/Algorithm/tree/master/src/sorting)|4|2|
 |이분 탐색|[링크](https://github.com/rhs0266/FastCampus/tree/main/%EA%B0%95%EC%9D%98%20%EC%9E%90%EB%A3%8C/02-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/05~06-%EC%9D%B4%EB%B6%84%20%ED%83%90%EC%83%89)|4|12|
 |두 포인터|[링크](https://github.com/rhs0266/FastCampus/tree/main/%EA%B0%95%EC%9D%98%20%EC%9E%90%EB%A3%8C/02-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/07~08-%EB%91%90%20%ED%8F%AC%EC%9D%B8%ED%84%B0)|5|7|
 |그래프 탐색|[링크](https://github.com/rhs0266/FastCampus/tree/main/%EA%B0%95%EC%9D%98%20%EC%9E%90%EB%A3%8C/02-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/09~11-%EA%B7%B8%EB%9E%98%ED%94%84%20%ED%83%90%EC%83%89)|7|13|
