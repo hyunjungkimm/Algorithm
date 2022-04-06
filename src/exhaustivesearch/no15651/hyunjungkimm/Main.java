@@ -1,5 +1,7 @@
 package exhaustivesearch.no15651.hyunjungkimm;
 
-public class Solution {
+import java.util.Scanner;
+
+public class Main {
 
 }
