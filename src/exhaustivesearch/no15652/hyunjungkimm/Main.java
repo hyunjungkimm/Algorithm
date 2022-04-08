@@ -14,11 +14,11 @@ public class Main {
 
         out = new int[M];
 
-        permutation(0,1, out);
+        combination(0,1, out);
         System.out.println(sb);
     }
 
-    private static void permutation(int depth, int start, int[] out) {
+    private static void combination(int depth, int start, int[] out) {
         if(depth == M){
             for(int num : out) sb.append(num).append(" ");
             sb.append("\n");
@@ -27,7 +27,7 @@ public class Main {
 
         for(int i = start; i<=N; i++){
             out[depth] = i;
-            permutation(depth+1, i, out);
+            combination(depth+1, i, out);
         }
     }
 }
