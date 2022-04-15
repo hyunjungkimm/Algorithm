@@ -14,24 +14,26 @@ public class Main {
         int n = Integer.parseInt(stk.nextToken());
         int m = Integer.parseInt(stk.nextToken());
 
-        Integer[] arr = new Integer[m];
+        int[] arr = new int[m];
         printNumbers(arr, n, 0);
-        System.out.print(sb.toString());
+        System.out.println(sb);
     }
 
-    public void printNumbers(Integer[] arr, int n, int depth){
+    public void printNumbers(int[] arr, int n, int depth){
         if(depth == arr.length){
-            for (Integer num: arr) {
+            for (int num: arr) {
                 sb.append(num).append(" ");
             }
             sb.append("\n");
             return;
         }
+
         for (int i = 1; i <= n; i++) {
-            if(depth != 0 && arr[depth-1] >= i) continue;
             arr[depth] = i;
             printNumbers(arr, n, depth + 1);
         }
+
+
     }
 
     public static void main(String[] args) {
@@ -43,3 +45,4 @@ public class Main {
         }
     }
 }
+
