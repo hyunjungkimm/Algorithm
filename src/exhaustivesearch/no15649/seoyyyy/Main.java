@@ -6,34 +6,38 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class Main {
-    StringBuilder sb = new StringBuilder();
     public void solution() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer stk = new StringTokenizer(br.readLine());
 
         int n = Integer.parseInt(stk.nextToken());
         int m = Integer.parseInt(stk.nextToken());
-
-        int[] arr = new int[m];
-        printNumbers(arr, n, 0);
-        System.out.println(sb);
+        printNumbers("", n, m);
     }
 
-    public void printNumbers(int[] arr, int n, int depth){
-        if(depth == arr.length){
-            for (int num: arr) {
-                sb.append(num).append(" ");
+    public void printNumbers(String str, int n, int m){
+        if(m > 1){
+            for (int i = 1; i <= n; i++) {
+                if(str.indexOf(String.valueOf(i)) != -1){
+                    continue;
+                }
+                printNumbers(joinStrNum(str, i), n, m - 1);
             }
-            sb.append("\n");
             return;
         }
 
+        StringBuilder result = new StringBuilder();
         for (int i = 1; i <= n; i++) {
-            arr[depth] = i;
-            printNumbers(arr, n, depth + 1);
+            if(str.indexOf(String.valueOf(i)) != -1){
+                continue;
+            }
+            result.append(joinStrNum(str, i)).append("\n");
         }
+        System.out.print(result);
+    }
 
-
+    public String joinStrNum(String str, int strNum){
+        return (str + " " + strNum).trim();
     }
 
     public static void main(String[] args) {
