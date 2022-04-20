@@ -18,8 +18,6 @@ public class Main {
 
         combination(0, 1, out);
         System.out.println(sb);
-
-
     }
 
     private static void combination(int depth, int start, int[] out) {

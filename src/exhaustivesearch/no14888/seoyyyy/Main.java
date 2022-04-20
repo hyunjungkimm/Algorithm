@@ -16,6 +16,7 @@ public class Main {
         int n = Integer.parseInt(br.readLine());
         numbers = new int[n];
         StringTokenizer stk = new StringTokenizer(br.readLine());
+
         for (int i = 0; i < numbers.length; i++) {
             numbers[i] = Integer.parseInt(stk.nextToken());
         }
