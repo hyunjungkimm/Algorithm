@@ -23,7 +23,7 @@ public class Main {
     }
 
     public static void nQueen(int[] chess, int col) {
-        if (col == N - 1) {
+        if (col > N - 1) {
             cnt++; // 경우의 수 증가
             return;
         }
