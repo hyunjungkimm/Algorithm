@@ -3,9 +3,9 @@ package exhaustivesearch.no15652.hwajin_jo;
 import java.util.Scanner;
 
 public class Main {
+
     static int N, M;
     static int[] arr;
-
     static StringBuilder sb = new StringBuilder();
 
     public static void main(String[] args) {
@@ -13,23 +13,25 @@ public class Main {
 
         N = sc.nextInt();
         M = sc.nextInt();
+
         arr = new int[M];
 
-        solution(1,0);
+        solution(1, 0);
+
         System.out.println(sb);
     }
 
-    public static void solution(int at, int depth) {
+    public static void solution(int start, int depth) {
 
         if (depth == M) {
-            for (int val : arr) {
-                sb.append(val).append(' ');
+            for (int i = 0; i < M; i++) {
+                sb.append(arr[i]).append(' ');
             }
             sb.append('\n');
         } else {
-            for (int i = at; i <= N; i++) {
+            for (int i = start; i <= N; i++) {
                 arr[depth] = i;
-                solution(i, depth+1);
+                solution(i, depth + 1);
             }
         }
     }

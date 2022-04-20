@@ -3,6 +3,7 @@ package exhaustivesearch.no15651.hwajin_jo;
 import java.util.Scanner;
 
 public class Main {
+
     static int N, M;
     static int[] arr;
     static StringBuilder sb = new StringBuilder();
@@ -12,27 +13,26 @@ public class Main {
 
         N = sc.nextInt();
         M = sc.nextInt();
+
         arr = new int[M];
 
         solution(0);
-        System.out.println(sb);
 
+        System.out.println(sb);
     }
 
     public static void solution(int depth) {
 
         if (depth == M) {
             for (int i = 0; i < M; i++) {
-                sb.append(arr[i]+ " ");
+                sb.append(arr[i]).append(' ');
             }
             sb.append('\n');
         } else {
-            for (int i = 1; i <= N; i++) {
-                arr[depth] = i;
-                solution(depth+1);
+            for (int i = 0; i < N; i++) {
+                arr[depth] = i+1;
+                solution(depth + 1);
             }
         }
-
-
     }
 }
