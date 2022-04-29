@@ -24,6 +24,7 @@ public class Main {
         }
 
         Long[] cardArr = cardMap.keySet().toArray(new Long[0]);
+        System.out.println(Arrays.toString(cardArr));
         Arrays.sort(cardArr);
 
         for (Long key:cardArr) {

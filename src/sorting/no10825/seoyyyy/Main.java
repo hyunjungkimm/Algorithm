@@ -23,6 +23,7 @@ public class Main {
         }
 
         Collections.sort(studentList, new Student());
+
         for (Student student: studentList ) {
             System.out.println(student.name);
         }

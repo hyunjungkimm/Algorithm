@@ -18,7 +18,7 @@ public class Main {
                 students[i][j] = sc.next();
             }
         }
-        Arrays.sort(students, new Comparator<String[]>() {
+/*        Arrays.sort(students, new Comparator<String[]>() {
             @Override
             public int compare(String[] o1, String[] o2) {
 
@@ -28,6 +28,7 @@ public class Main {
                             return o1[0].compareTo(o2[0]);
                         }
                         return Integer.parseInt(o2[3]) - Integer.parseInt(o1[3]);
+
                     }
                     return Integer.parseInt(o1[2]) - Integer.parseInt(o2[2]);
                 }else{
@@ -35,8 +36,8 @@ public class Main {
                 }
 
             }
-        });
-   /*    Arrays.sort(students, new Comparator<String[]>() {
+        });*/
+      Arrays.sort(students, new Comparator<String[]>() {
             @Override
             public int compare(String[] o1, String[] o2) {
 
@@ -53,7 +54,7 @@ public class Main {
                 }
 
             }
-        });*/
+        });
         for(int i = 0; i<N; i++) {
             System.out.println(students[i][0]);
         }
