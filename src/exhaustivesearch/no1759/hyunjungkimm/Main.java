@@ -1,7 +1,7 @@
 package exhaustivesearch.no1759.hyunjungkimm;
 
 import java.util.*;
-//테스트
+
 public class Main {
     static int L;
     static int C;
