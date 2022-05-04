@@ -11,21 +11,21 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         StringBuffer sb = new StringBuffer();
 
-        int n = sc.nextInt();
+        int n = sc.nextInt(); // 갯수 입력
 
         int A[][] = new int[n][2];
         int B[] = new int[n];
 
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < n; i++) // 배열의 원소값과 인덱스 값 입력
         {
             int k = sc.nextInt();
-            A[i][0] = i;
-            A[i][1] = k;
+            A[i][0] = i; // 인덱스 값 입력
+            A[i][1] = k; // 배열의 원소 값 입력
         }
 
-        sortArray(A);
+        sortArray(A); // 배열을 정럴을 위해 함수 호출
 
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < n; i++) // A의 인덱스 값을 B배열에 넣어주기
         {
             B[A[i][0]] = i;
         }
