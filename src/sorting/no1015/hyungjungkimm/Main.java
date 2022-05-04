@@ -2,7 +2,7 @@ package sorting.no1015.hyungjungkimm;
 
 
 import java.util.*;
-public class Main {
+/*public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
@@ -35,10 +35,10 @@ public class Main {
             System.out.print(" ");
         }
     }
-}
+}*/
 
 
-/*
+
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -52,9 +52,8 @@ public class Main {
         }
         Arrays.sort(arr);
 
-
+        int count = 1;
         while(queue.size() != 0){
-            int count = 1;
             for(int i = 0; i<arr.length; i++){
                 if(queue.peek() == arr[i]){
                     if(answer.contains(i)){
@@ -64,11 +63,12 @@ public class Main {
                     }else{
                         answer.add(i);
                         queue.poll();
-                        count = 1;
                     }
                     break;
                 }
+
             }
+            count = 1;
         }
 
         for(int i = 0; i<answer.size();i++){
@@ -78,4 +78,4 @@ public class Main {
     }
 }
 
-*/
+
